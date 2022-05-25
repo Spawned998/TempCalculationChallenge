@@ -48,12 +48,16 @@ namespace ConsoleUI
                     temperatures.Add(item.Key);
                 }
             }
+
+            RunCalculations();
         }
 
 
         public void Insert(int temperature)
         {
             temperatures.Add(temperature);
+
+            RunCalculations();
         }
 
         public void RunCalculations()
